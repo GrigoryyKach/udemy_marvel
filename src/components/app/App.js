@@ -21,6 +21,8 @@ const App = () => {
 		<div className="app">
 			<AppHeader />
 			<main>
+				{/* <AppBanner />
+				<ComicsList /> */}
 				<ErrorBoundary>
 					<RandomChar />
 				</ErrorBoundary>
