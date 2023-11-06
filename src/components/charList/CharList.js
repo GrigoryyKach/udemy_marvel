@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import PropTypes, { object } from 'prop-types';
+import PropTypes from 'prop-types';
 
 import Spinner from '../spinner/Spinner';
 import ErrorMessage from '../errorMessage/ErrorMessage';
@@ -17,6 +17,7 @@ const CharList = (props) => {
 
 	useEffect(() => {
 		onRequest(offset, true);
+		// eslint-disable-next-line
 	}, [])
 
 	const onRequest = (offset, initial) => {
@@ -36,8 +37,6 @@ const CharList = (props) => {
 		setOffset(offset => offset + 9);
 		setCharEnded(charEnded => ended);
 	}
-
-	console.log('sdasdasd');
 
 	const itemRefs = useRef([]);
 
